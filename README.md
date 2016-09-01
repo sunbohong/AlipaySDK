@@ -1,9 +1,8 @@
 # AlipaySDK
 AlipaySDK
 
-UTDID 是 阿里系的一个基础库，用于产生唯一设备id。大部分的阿里系SDK依赖该库。
-
-为了保证编译通过（防止符号丢失和符号冲突），需要确保**有且只有一个**类库中包含 UTDID 的源码。
+> UTDID 是 阿里系的一个基础库，用于产生唯一设备id。大部分的阿里系SDK依赖该库。
+> 为了保证编译通过（防止符号丢失和符号冲突），需要确保**有且只有一个**类库中包含 UTDID 的源码。
 
 AlipaySDK 下载自： https://doc.open.alipay.com/doc2/detail.htm?treeId=54&articleId=104509&docType=1
 
@@ -17,3 +16,18 @@ SDK更新日志：
 > 1. 增加支付宝支付和授权2.0体系服务；
 > 2. 完全兼容1.0体系，授权和支付接口保持不变；
 > 3. 订单组装问题修复。
+
+
+# install
+
+```
+pod 'AlipaySDK_No_UTDID_SUN', '~> 15.2.0'
+```
+或者
+
+```
+pod 'AlipaySDK_SUN', '~> 15.2.0'
+```
+
+> 因为 [cocoapods](https://guides.cocoapods.org/making/getting-setup-with-trunk) 的限制，所有的项目必须编译通过才能发布，所以该项目依赖了 `UTDID` 库。
+> 请注意是否需要防止符号冲突。
