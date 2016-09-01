@@ -16,5 +16,4 @@ Pod::Spec.new do |s|
   s.resource = 'AlipaySDK_No_UTDID/AlipaySDK.bundle'
   s.frameworks = 'SystemConfiguration','CoreTelephony','QuartzCore','CoreText','CoreGraphics','UIKit','Foundation','CFNetwork','CoreMotion'
   s.libraries = "c++","z"
-  s.dependency 'UTDID'
 end
